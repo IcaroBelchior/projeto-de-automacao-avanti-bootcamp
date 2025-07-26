@@ -14,7 +14,8 @@ describe('Validar registro de usuário', () => {
     cy.clickButtonRegister();
 
     //Necessário para fazer o captcha que aparece após clicar em registrar
-    cy.wait(20000);
+    //Após as interações acima terá esse timer para fazer o CAPTCHA do site, que sempre aparece quando clica em registrar, por isso deve ser feito o CAPTCHA na tela do cypress manualmente.
+    cy.wait(20000); //Melhor forma de rodar o teste
     
     cy.contains("Your email address hasn't been verified").should('be.visible') //confirma que a conta foi feita, porém precisa confirmar o email
 
@@ -33,6 +34,7 @@ describe('Validar registro de usuário', () => {
     cy.clickButtonRegister();
 
     //Necessário para fazer o captcha que aparece após clicar em registrar
+    //Após as interações acima terá esse timer para fazer o CAPTCHA do site, que sempre aparece quando clica em registrar, por isso deve ser feito o CAPTCHA na tela do cypress manualmente.
     cy.wait(20000);
 
     cy.contains('Username é necessário(a)').should('be.visible')
@@ -51,6 +53,7 @@ describe('Validar registro de usuário', () => {
     cy.clickButtonRegister();
 
     //Necessário para fazer o captcha que aparece após clicar em registrar
+      //Após as interações acima terá esse timer para fazer o CAPTCHA do site, que sempre aparece quando clica em registrar, por isso deve ser feito o CAPTCHA na tela do cypress manualmente.
     cy.wait(20000);
 
     
@@ -71,6 +74,7 @@ describe('Validar registro de usuário', () => {
     cy.clickButtonRegister();
 
     //Necessário para fazer o captcha que aparece após clicar em registrar
+      //Após as interações acima terá esse timer para fazer o CAPTCHA do site, que sempre aparece quando clica em registrar, por isso deve ser feito o CAPTCHA na tela do cypress manualmente.
     cy.wait(20000);
 
     
