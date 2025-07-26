@@ -17,3 +17,4 @@ Cypress.Commands.add('typeConfirmPassword', (confirmPassword) => {
 Cypress.Commands.add('clickButtonRegister', () => {
   cy.get('input[value="Registrar"]').click();
 });
+//Autor: Ícaro Miranda Belchior
