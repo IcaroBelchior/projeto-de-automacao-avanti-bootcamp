@@ -61,3 +61,5 @@ Cypress.Commands.add('clickBotaoExcluir', () => {
 Cypress.Commands.add('clickItemByName', (name) => {
   cy.get('li.k-list-item').contains(name).click();
 });
+
+//Autor: Ícaro Miranda Belchior
